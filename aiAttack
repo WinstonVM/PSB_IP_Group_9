@@ -1,0 +1,10 @@
+import random
+
+def aiAttack(aiAtk, userDef):
+    target = chooseTarget()
+    bias = random.randint(5, 10)
+    dmg = aiAtk - userDef + bias
+    # targetHp -= dmg
+    aiExp += aiAtk
+    userExp += userDef
+    extraExp()
