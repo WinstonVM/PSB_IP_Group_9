@@ -1,0 +1,6 @@
+def expCalc(exp, currentRank):
+    if exp >= 100:
+        exp -= 100
+        currentRank += 1
+    print(currentRank)
+    print(exp)
