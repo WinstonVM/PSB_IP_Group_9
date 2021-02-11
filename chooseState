@@ -1,0 +1,18 @@
+def chooseState(maxAtk, lowSelfHP):
+    # Determining bias
+    bias = 0 # The higher the bias, the more likely it is to heal
+    if maxAtk > lowSelfHP:
+        bias += 23
+    elif maxAtk == lowSelfHP:
+        bias += 10
+    else:
+        bias += 2
+
+    # Probability logic
+    randomizer = random.randint(1, 25)
+    print(randomizer)
+    print(bias)
+    if randomizer <= bias:
+        print("heal")
+    elif randomizer > bias:
+        print("attack")
